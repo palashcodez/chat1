@@ -8,6 +8,8 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 	background-image: url(wave.png);
+	color: #38d39f;
+	font-weight:900;
 }
 
 .wave{
