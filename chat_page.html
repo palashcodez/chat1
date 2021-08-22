@@ -17,7 +17,7 @@
 
 </head>
 <body>
-	<img class="wave" src="wave.png">
+    <img class="wave" src="wave.png">
 <div class="container">
 <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
 	<center>
@@ -28,21 +28,15 @@
 				<img src="chat icon.png" width="70" height="70">
 			</sup>
 		</h1>
-    </center>
-    <center>
-		<h3 class="color_white" id="user_name"></h3>
-		<div class="form-group input_div_room_page">
-			<label>#Add Room:</label>
-			<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
-		</div>
-		<button class="btn btn-success" onclick="addroom()">#Add Room</button>
 
-		<h3>#TRENDINGROOMS</h3>
-		<div id="output">
-			
-		</div>
+    </center>
+    <div class="input_div_message_page">
+		<label>Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder="send a message">
+		<button class="btn btn-success" onclick="send()">Send</button>
 	</div>
-	</center>
-<script src="chat.js"></script>
+    <center>
+
+<script src="chat_page.js"></script>
 </body>
 </html>

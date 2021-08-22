@@ -22,9 +22,7 @@
 
       function addroom(){
         room_name=document.getElementById("room_name").value;
-        firebase.database().ref("/").child(room_name).update({
-              purpose:"adding the room..."
-        });
+        firebase.database().ref("/").child(room_name).update({ purpose : "adding room name" });
         localStorage.setItem("room_name", room_name);
         window.location="chat_page.html";
   }
@@ -33,17 +31,13 @@
         Room_names = childKey;
        //Start code
        console.log("room name "+Room_names);
-       row ="<div class='room' id= "+Room_names+"onclick='redirectToroomname(this.id)'>#"+Room_names+"</div> <hr>";
+       row = "<div class='room_name' id="+Room_names+" onclick='redirectToRoomName(this.id)' >#"+ Room_names +"</div><hr>";
        document.getElementById("output").innerHTML+=row;
        //End code
        });});}
 getData();
 
-function redirectToroomname(name){
+function redirectToRoomName(name){
   localStorage.setItem("room name", name);
   window.location="chat_page.html";
 }
-
-
-
- 
